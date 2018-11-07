@@ -1,4 +1,4 @@
-import java.io.IOException;
+﻿import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -19,11 +19,11 @@ public class Main {
         editFile ef=new editFile();
         if(chooseOne.equals("1")) {
             System.out.println("Write ur text(Enter |pointOfEnd| when you want to finish): ");
-            while(!text.contains("end")){
+            while(!text.contains("pointOfEnd")){
             Scanner scanT = new Scanner(System.in);
             text+= scanT.next()+"\r\n";
             }
-            text=text.replace("end","");
+            text=text.replace("pointOfEnd","");
             System.out.println("Write file's path : ");
             Scanner scanW = new Scanner(System.in);
             String path = scanW.nextLine();
